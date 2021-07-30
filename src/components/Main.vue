@@ -114,61 +114,6 @@
                 class="bi bi-bookmark-heart"
               ></i>
             </b-card>
-            <!-- <b-card
-          style="max-width: 15rem"
-        >
-        <div class="bg-image hover-zoomin">
-          <img
-            v-bind:src="item.url_img"
-            class="
-              img-fluid
-              ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}
-            "
-            alt="San Pham"
-          />
-        </div>
-          <hr />
-          <div class="item text-center">
-            <span
-              class="name"
-              style="
-                color:#057c94;
-                "
-              ><strong>{{ item.Name }}</strong></span
-            ><br />
-            <span
-              style="
-                font-size:13px;
-              "
-              >{{ item.Detail }}</span
-            >
-          </div>
-          <div class="money text-center">
-            <span
-              style="font-size:13px;
-             color: red;"
-              ><strong>
-                {{ ((item.newCash * (100 - item.sale)) / 100) | dauCham }}
-                đ</strong
-              ></span
-            >
-            <span
-              style="font-size:13px;
-            color:grey;"
-            >
-              <del>{{ item.newCash | dauCham }} đ</del></span
-            >
-          </div>
-          <div class="submit text-center">
-            <hr />
-
-            <b-button @click="addToCart(item)"
-             variant="outline-info"
-              ><i class="bi bi-cart-plus"
-                style="font-size:16px;"
-              ></i> Thêm giỏ hàng</b-button>
-          </div>
-        </b-card> -->
           </div>
         </b-col>
       </b-row>
