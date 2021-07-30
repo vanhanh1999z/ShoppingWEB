@@ -5,7 +5,7 @@
         <b-col style="padding:0;">
           <b-navbar toggleable type="dark" variant="info">
             <b-navbar-brand href="#"><router-link to='/home'>DAY LA CUA NGUYEN DU</router-link></b-navbar-brand>
-
+        
             <b-navbar-toggle target="navbar-toggle-collapse"> </b-navbar-toggle>
 
             <b-collapse id="navbar-toggle-collapse" is-nav> </b-collapse>
@@ -16,6 +16,11 @@
       <b-row>
         <b-col sm="4" class="category justify-content-md-center">
           <strong>DAY LA PHAN CUA LE MINH HIEU</strong>
+          <ul>
+            <li>1222</li>
+            <li>22222222</li>
+            <li>2222222</li>
+          </ul>
           <!-- <Category>  
           </Category> -->
         </b-col>
