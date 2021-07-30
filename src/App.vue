@@ -16,11 +16,6 @@
       <b-row>
         <b-col sm="4" class="category justify-content-md-center">
           <strong>DAY LA PHAN CUA LE MINH HIEU</strong>
-          <ul>
-            <li>1222</li>
-            <li>22222222</li>
-            <li>2222222</li>
-          </ul>
           <!-- <Category>  
           </Category> -->
         </b-col>
