@@ -14,16 +14,16 @@
         </b-col>
       </b-row>
       <b-row>
-        <b-col sm="4" class="category justify-content-md-center">
-          <strong>DAY LA PHAN CUA LE MINH HIEU</strong>
+        <b-col sm="3" class="justify-content-start">
+            <div id="MenuLeft">
+              <Menuleft />
+            </div>
           <!-- <Category>  
           </Category> -->
         </b-col>
-        <b-col sm="8">
-          <div
-            
-          >
-          <router-view></router-view>
+        <b-col sm="9">
+          <div>
+          <router-view />
           </div>
         </b-col>
       </b-row>
@@ -34,6 +34,7 @@
 <script>
 // import Main from "./components/Main.vue";
 // import Category from "./components/Category.vue";
+import Menuleft from './components/MenuLeft.vue'
 
 export default {
   data: () => {
@@ -42,6 +43,7 @@ export default {
   components: {
     // Main,
     // Category,
+    Menuleft
   },
 };
 </script>
