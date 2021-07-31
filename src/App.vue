@@ -1,34 +1,22 @@
 <template>
   <div class="app">
-    <title>WEBSERVICE</title>
-    <b-container fluid="md">
-      <b-row>
-        <b-col style="padding:0;">
-          <header>
-            <Nav />
-          </header>
-        </b-col>
-      </b-row>
-      <b-row style="margin-top:60px;">
-        <b-col sm="3" class="justify-content-start">
-          <div id="MenuLeft">
-            <Menuleft />
-          </div>
-          <!-- <Category>  
-          </Category> -->
-        </b-col>
-        <b-col sm="9">
-          <div>
-            <router-view />
-          </div>
-        </b-col>
-      </b-row>
-    </b-container>
+    <b-container fluid class="bv-example-row">
+  <b-row>
+    <Nav/>
+  </b-row>
+  <div>
+    <router-view></router-view>
+  </div>
+  <div>
+      <Footer></Footer>
+    </div>
+</b-container>
   </div>
 </template>
 
 <script>
-import Menuleft from "./components/MenuLeft.vue";
+// import Menuleft from "./components/MenuLeft.vue";
+import Footer from "./components/Footer.vue";
 import Nav from "./components/Nav";
 import axios from "axios";
 
@@ -41,8 +29,10 @@ export default {
   },
   components: {
     Nav,
-    Menuleft,
+    Footer,
+    // Menuleft,
   },
+  methods: {},
 
   async created() {
     const response = await axios.get("user");
@@ -55,6 +45,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;

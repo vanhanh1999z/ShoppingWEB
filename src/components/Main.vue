@@ -7,7 +7,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
@@ -15,8 +15,8 @@
 
     <!-- SHOPPING CART -->
 
-    <div style="margin-left:10px; margin-top:15px;" class="text-left">
-      <div>
+    <div style="margin-left:10px; margin-top:15px; " class="text-left">
+      <div style="text-align:center;">
         <b-button
           style="background-color:#008ba7;
           border:#008ba7;"
@@ -66,13 +66,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;"
+    align-items: center;
+    max-width: 1050px;"
         >
           <div
             class="Menu-item"
             v-for="(item, index) in items.slice(
-              6 * (currentPage - 1),
-              6 * currentPage
+              8 * (currentPage - 1),
+              8 * currentPage
             )"
             :key="index"
           >
@@ -118,20 +119,31 @@
           </div>
         </b-col>
       </b-row>
-    </div>
 
-    <!-- PAGINATION -->
-    <b-pagination
-      style="margin-left: 10px;"
-      v-model="currentPage"
-      :total-rows="Math.ceil(items.length / 6)"
-      :per-page="perPage"
-      :items="items"
-      aria-controls="my-list"
-    ></b-pagination>
+      <!-- PAGINATION -->
+      <b-row >
+        <b-pagination
+          style="margin-left: 10px;
+      display: flex;
+    justify-content: center"
+          v-model="currentPage"
+          :total-rows="Math.ceil(items.length / 8)"
+          :per-page="perPage"
+          :items="items"
+          aria-controls="my-list"
+        ></b-pagination>
+      </b-row>
+
+
+    </div>
   </div>
 </template>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js" integrity="sha512-otOZr2EcknK9a5aa3BbMR9XOjYKtxxscwyRHN6zmdXuRfJ5uApkHB7cz1laWk2g8RKLzV9qv/fl3RPwfCuoxHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"
+  integrity="sha512-otOZr2EcknK9a5aa3BbMR9XOjYKtxxscwyRHN6zmdXuRfJ5uApkHB7cz1laWk2g8RKLzV9qv/fl3RPwfCuoxHQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
 <script src="https://cdn.jsdelivr.net/vuejs-paginator/2.0.0/vuejs-paginator.min.js"></script>
 <script>
 import shoppingCart from "./shoppingCart.vue";
@@ -149,18 +161,17 @@ export default {
   },
 
   components: {
+    
     shoppingCart,
   },
-  mounted(){
-    
-  },
+  mounted() {},
   async created() {
-   const response = await axios.get("https://localhost:44314/api/Items");
+    const response = await axios.get("https://localhost:44314/api/Items");
     this.items = response.data;
-  //   // fetch('https://localhost:44314/api/Items')
-  //  fetch('http://localhost:3000/data')
-  // .then(response => response.json())
-  // .then(data => this.items=data);
+    //   // fetch('https://localhost:44314/api/Items')
+    //  fetch('http://localhost:3000/data')
+    // .then(response => response.json())
+    // .then(data => this.items=data);
   },
   methods: {
     onChangePage(pageOfItems) {
@@ -195,6 +206,16 @@ export default {
 </script>
 
 <style>
+*{
+   margin: 0;
+  padding: 0;
+}
+.row {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  max-width: 99%;
+}
 .money span {
   margin: 5px;
 }
