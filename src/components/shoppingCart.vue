@@ -3,19 +3,19 @@
        <div>
                       <b-table striped hover :items="items" :fields="fields">
                         <template #cell(name)="data">
-                          <b >{{data.item.Name}}</b>
+                          <b >{{data.item.title}}</b>
                         </template>
                         <template #cell(newCash)="data">
-                        <b>{{data.item.newCash | dauCham}} VNĐ</b>
+                        <b>{{data.item.priece | dauCham}} VNĐ</b>
                         </template>
                         <template #cell(qty)="data">
                           <input v-model="data.item.qty" class="form-control input-qty" type="number">
                         </template>
                         <template #cell(total)="data">
-                          <b>{{data.item.qty*data.item.newCash | dauCham}} VNĐ</b>
+                          <b>{{data.item.qty*data.item.priece | dauCham}} VNĐ</b>
                         </template>
                         <template #cell(del)= "data">
-                          <b-button style="color:white" variant="danger" @click="removeItem(data.item.Name)">Xóa</b-button>
+                          <b-button style="color:white" variant="danger" @click="removeItem(data.item.title)">Xóa</b-button>
                         </template>
                       </b-table>
                       <span class="text-primary "><strong>Tổng tiền: {{Total | dauCham}} VNĐ</strong></span>
@@ -39,7 +39,7 @@ export default {
     Total() {
       let total = 0;
       this.items.forEach(item => {
-        total += (item.newCash * item.qty);
+        total += (item.priece * item.qty);
       });
       return total;
     }

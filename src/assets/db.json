@@ -1,189 +1,166 @@
 {
   "data": [
     {
-      "id": 1,
-      "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK260-1-400x500.jpg",
-      "Name": "Áo phông nam APHTK264",
-      "newCash": 250000,
-      "sale": 25,
-      "isClicked": false,
-      "qty": 1
-    },
-    {
       "id": 2,
-      "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK264-13-400x500.jpg",
-      "Name": "Áo phông nam APHTK260",
-      "newCash": 289000,
+      "title": "Áo phông nam APHTK264",
+      "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK260-1-400x500.jpg",
+      "priece": 250000,
       "sale": 25,
-      "isClicked": false,
+      "isChecked": false,
       "qty": 1
     },
     {
       "id": 3,
-      "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK258-8-400x500.jpg",
-      "Name": "Áo phông nam APHTK258",
-      "newCash": 279000,
+      "title": "Áo phông nam APHTK260",
+      "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK264-13-400x500.jpg",
+      "priece": 289000,
       "sale": 25,
-      "isClicked": false,
+      "isChecked": false,
       "qty": 1
     },
     {
       "id": 4,
-      "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK253-8-400x500.jpg",
-      "Name": "Áo phông nam APHTK261",
-      "newCash": 270000,
+      "title": "Áo phông nam APHTK264",
+      "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK260-1-400x500.jpg",
+      "priece": 250000,
       "sale": 25,
-      "isClicked": false,
+      "isChecked": false,
       "qty": 1
     },
     {
       "id": 5,
-      "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/POMTK222-1-400x500.jpg",
-      "Name": "Áo phông nam 262",
-      "newCash": 30000,
+      "title": "Áo phông nam APHTK260",
+      "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK264-13-400x500.jpg",
+      "priece": 289000,
       "sale": 25,
-      "isClicked": false,
+      "isChecked": false,
       "qty": 1
     },
     {
       "id": 6,
-      "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/POMTK204-1-400x500.jpg",
-      "Name": "Áo phông nam 263",
-      "newCash": 289000,
+      "title": "Áo phông nam APHTK258",
+      "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK258-8-400x500.jpg",
+      "priece": 279000,
       "sale": 25,
-      "isClicked": false,
+      "isChecked": false,
       "qty": 1
     },
     {
       "id": 7,
-      "url_img": "https://360boutique.vn/wp-content/uploads/2021/04/POTTK217-1-2-400x500.jpg",
-      "Name": "Áo phông nam 264",
-      "newCash": 150000,
+      "title": "Áo phông nam APHTK261",
+      "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK253-8-400x500.jpg",
+      "priece": 270000,
       "sale": 25,
-      "isClicked": false,
+      "isChecked": false,
       "qty": 1
     },
     {
       "id": 8,
-      "url_img": "https://360boutique.vn/wp-content/uploads/2021/04/POTTK214-1-2-400x500.jpg",
-      "Name": "Áo phông nam 265",
-      "newCash": 250000,
+      "title": "Áo phông nam 262",
+      "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/POMTK222-1-400x500.jpg",
+      "priece": 30000,
       "sale": 25,
-      "isClicked": false,
+      "isChecked": false,
       "qty": 1
     },
     {
       "id": 9,
-      "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK264-13-400x500.jpg",
-      "Name": "Áo phông nam 266",
-      "newCash": 160000,
+      "title": "Áo phông nam 263",
+      "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/POMTK204-1-400x500.jpg",
+      "priece": 289000,
       "sale": 25,
-      "isClicked": false,
+      "isChecked": false,
       "qty": 1
     },
     {
       "id": 10,
-      "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK264-13-400x500.jpg",
-      "Name": "Áo phông nam 267",
-      "newCash": 200000,
+      "title": "Áo phông nam 264",
+      "url_img": "https://360boutique.vn/wp-content/uploads/2021/04/POTTK217-1-2-400x500.jpg",
+      "priece": 150000,
       "sale": 25,
-      "isClicked": false,
+      "isChecked": false,
       "qty": 1
     },
     {
       "id": 11,
-      "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK264-13-400x500.jpg",
-      "Name": "Áo phông nam 269",
-      "newCash": 289000,
+      "title": "Áo phông nam 265",
+      "url_img": "https://360boutique.vn/wp-content/uploads/2021/04/POTTK214-1-2-400x500.jpg",
+      "priece": 250000,
       "sale": 25,
-      "isClicked": false,
+      "isChecked": false,
       "qty": 1
     },
     {
       "id": 12,
+      "title": "Áo phông nam 266",
       "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK264-13-400x500.jpg",
-      "Name": "Áo phông nam 268",
-      "newCash": 289000,
+      "priece": 160000,
       "sale": 25,
-      "isClicked": false,
+      "isChecked": false,
       "qty": 1
     },
     {
       "id": 13,
+      "title": "Áo phông nam 267",
       "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK264-13-400x500.jpg",
-      "Name": "Áo phông nam 270",
-      "newCash": 289000,
+      "priece": 200000,
       "sale": 25,
-      "isClicked": false,
+      "isChecked": false,
       "qty": 1
     },
     {
       "id": 14,
+      "title": "Áo phông nam 269",
       "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK264-13-400x500.jpg",
-      "Name": "Áo phông nam 271",
-      "newCash": 289000,
+      "priece": 289000,
       "sale": 25,
-      "isClicked": false,
+      "isChecked": false,
       "qty": 1
     },
     {
       "id": 15,
+      "title": "Áo phông nam 268",
       "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK264-13-400x500.jpg",
-      "Name": "Áo phông nam 272",
-      "newCash": 289000,
+      "priece": 289000,
       "sale": 25,
-      "isClicked": false,
+      "isChecked": false,
       "qty": 1
     },
     {
       "id": 16,
+      "title": "Áo phông nam 270",
       "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK264-13-400x500.jpg",
-      "Name": "Áo phông nam 273",
-      "newCash": 289000,
+      "priece": 289000,
       "sale": 25,
-      "isClicked": false,
+      "isChecked": false,
       "qty": 1
     },
     {
       "id": 17,
+      "title": "Áo phông nam 272",
       "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK264-13-400x500.jpg",
-      "Name": "Áo phông nam 274",
-      "newCash": 289000,
-      "sale": 25
+      "priece": 289000,
+      "sale": 25,
+      "isChecked": false,
+      "qty": 1
     },
     {
       "id": 18,
+      "title": "Áo phông nam 273",
       "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK264-13-400x500.jpg",
-      "Name": "Áo phông nam 275",
-      "newCash": 289000,
-      "sale": 25
+      "priece": 289000,
+      "sale": 25,
+      "isChecked": false,
+      "qty": 1
     },
     {
       "id": 19,
+      "title": "Áo phông nam 274",
       "url_img": "https://360boutique.vn/wp-content/uploads/2021/05/APHTK264-13-400x500.jpg",
-      "Name": "Áo phông nam 276",
-      "newCash": 289000,
-      "sale": 25
-    },
-    {
-      "title": "Vue POST Request Example",
-      "id": 20
-    },
-    {
-      "title": "Vue POST Request Example",
-      "id": 21
-    },
-    {
-      "title": "Vue POST Request Example",
-      "id": 22
-    },
-    {
-      "title": "Vue POST Request Example",
-      "id": 23
-    },
-    {
-      "title": "Vue POST Request Example",
-      "id": 24
+      "priece": 289000,
+      "sale": 25,
+      "isChecked": false,
+      "qty": 1
     }
   ]
 }

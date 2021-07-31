@@ -7,6 +7,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
@@ -76,7 +77,7 @@
             :key="index"
           >
             <b-card
-              v-bind:title="item.Name"
+              v-bind:title="item.title"
               v-bind:img-src="item.url_img"
               img-alt="Image"
               img-top
@@ -91,7 +92,7 @@
              color: red;"
                     ><strong>
                       <i class="bi bi-arrow-return-right"></i>
-                      {{ ((item.newCash * (100 - item.sale)) / 100) | dauCham }}
+                      {{ ((item.priece * (100 - item.sale)) / 100) | dauCham }}
                       đ</strong
                     ></span
                   >
@@ -99,7 +100,7 @@
                     style="font-size:13px;
             color:grey;"
                   >
-                    <del>{{ item.newCash | dauCham }} đ</del></span
+                    <del>{{ item.priece | dauCham }} đ</del></span
                   >
                 </div>
               </b-card-text>
@@ -109,8 +110,8 @@
                 giỏ hàng</b-button
               >
               <i
-                :class="{click: item.isClicked}"
-                @click="item.isClicked= !item.isClicked"
+                :class="{ click: item.isChecked }"
+                @click="item.isChecked = !item.isChecked"
                 class="bi bi-bookmark-heart"
               ></i>
             </b-card>
@@ -130,10 +131,9 @@
     ></b-pagination>
   </div>
 </template>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js" integrity="sha512-otOZr2EcknK9a5aa3BbMR9XOjYKtxxscwyRHN6zmdXuRfJ5uApkHB7cz1laWk2g8RKLzV9qv/fl3RPwfCuoxHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/vuejs-paginator/2.0.0/vuejs-paginator.min.js"></script>
 <script>
-import json from "../assets/data.json";
 import shoppingCart from "./shoppingCart.vue";
 
 export default {
@@ -141,7 +141,7 @@ export default {
     return {
       pageArr: [],
       cartItems: [],
-      items: json,
+      items: [],
       cartItems: [],
       perPage: 1,
       currentPage: 1,
@@ -151,7 +151,17 @@ export default {
   components: {
     shoppingCart,
   },
-
+  mounted(){
+    
+  },
+  async created() {
+   const response = await axios.get("https://localhost:44314/api/Items");
+    this.items = response.data;
+  //   // fetch('https://localhost:44314/api/Items')
+  //  fetch('http://localhost:3000/data')
+  // .then(response => response.json())
+  // .then(data => this.items=data);
+  },
   methods: {
     onChangePage(pageOfItems) {
       this.pageOfItems = pageOfItems;
@@ -228,7 +238,7 @@ export default {
 .bi-bookmark-heart:hover {
   cursor: pointer;
 }
-.click{
-  color:red;
+.click {
+  color: red;
 }
 </style>

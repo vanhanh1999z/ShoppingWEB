@@ -1,13 +1,14 @@
 import '@babel/polyfill'
 import 'mutationobserver-shim'
 import Vue from 'vue'
+
 import './plugins/bootstrap-vue'
 import App from './App.vue'
 import Paginate from 'vuejs-paginate'
 import router from './router'
-import './axios'
-import store from './vuex'
 
+import store from './vuex'
+window.axios = require('axios');
 window.Vue = Vue;
 Vue.component('paginate', Paginate)
 

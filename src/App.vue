@@ -1,5 +1,6 @@
 <template>
   <div class="app">
+    <title>WEBSERVICE</title>
     <b-container fluid="md">
       <b-row>
         <b-col style="padding:0;">
