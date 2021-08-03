@@ -1,16 +1,16 @@
 <template>
   <div class="app">
-    <b-container fluid class="bv-example-row">
-  <b-row>
-    <Nav/>
-  </b-row>
-  <div>
-    <router-view></router-view>
-  </div>
-  <div>
-      <Footer></Footer>
+    <div>
+      <div>
+        <Nav />
+      </div>
+      <div class="router-view">
+        <router-view></router-view>
+      </div>
+      <div class="footer">
+        <Footer></Footer>
+      </div>
     </div>
-</b-container>
   </div>
 </template>
 
@@ -51,7 +51,9 @@ export default {
   text-decoration: none;
   list-style-type: none;
 }
-
+.router-view {
+  min-height: 700px;
+}
 .category {
   border: 1px solid #333;
   display: flex;
@@ -91,9 +93,6 @@ htmk,
   height: 100%;
 }
 
-#app {
-  text-align: center;
-}
 
 .navbar-light {
   background-color: #ffffff;

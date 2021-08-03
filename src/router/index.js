@@ -13,7 +13,7 @@ Vue.use(VueRouter)
 const routes = [
   {path: '/cart', component: shoppingCart},
   {path: '/main', component: Home},
-  {path:'/check-out', component: Checkout},
+  {name:'Checkout',path:'/check-out', component: Checkout},
   {path:'/', component: Home},
   {path:'/login', component: Login},
   {path:'/register', component: Register},

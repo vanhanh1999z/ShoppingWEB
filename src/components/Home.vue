@@ -23,7 +23,7 @@ export default {
   computed: {
     ...mapGetters(["user"]),
   },
-  props: ["user"],
+  // props: ["user"],
 };
 </script>
 

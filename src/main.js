@@ -10,6 +10,8 @@ import router from './router'
 import store from './vuex'
 window.axios = require('axios');
 window.Vue = Vue;
+import ProductZoomer from 'vue-product-zoomer'
+Vue.use(ProductZoomer)
 Vue.component('paginate', Paginate)
 
 Vue.config.productionTip = false
